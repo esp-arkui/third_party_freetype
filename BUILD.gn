@@ -1,5 +1,5 @@
 # Copyright (C) 2018. Huawei Technologies Co., Ltd. All rights reserved.
-import("//build/zidane.gni")
+import("//build/harmonyos.gni")
 config("libft2_config"){
   cflags = [
   ]
@@ -8,7 +8,7 @@ config("libft2_config"){
   ]
 }
 
-zidane_source_set("libft2_src") {
+harmonyos_source_set("libft2_src") {
   sources = [
     "src/autofit/autofit.c",
     "src/base/ftbase.c",
@@ -58,7 +58,7 @@ zidane_source_set("libft2_src") {
   configs = [ ":libft2_config" ]
 }
 
-zidane_shared_library("libft2") {
+harmonyos_shared_library("libft2") {
   deps = [
     ":libft2_src",
   ]
