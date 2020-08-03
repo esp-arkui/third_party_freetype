@@ -2,7 +2,7 @@
     {
         "Name"                  : "freetype",
         "License"               : "The FreeType Project License",
-        "License File"          : "https://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT",
+        "License File"          : "docs/LICENSE.TXT",
         "Version Number"        : "2.10.1",
         "Owner"                 : "ouyangyueling@huawei.com",
         "PDM Number"            : "05833LWV",
