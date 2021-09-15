@@ -73,6 +73,7 @@ Note:If the text contains special characters, please escape them according to th
             <filefilter name="defaultFilter" desc="Files not to check">
                 <filteritem type="filepath" name="docs/CHANGES" desc="This is chenglog file, no need license"/>
                 <filteritem type="filepath" name="docs/PROBLEMS" desc="This is a problems file, no need license"/>
+                <filteritem type="fillname" name="ChangeLog" desc="This is chenglog file, no need license"/>
                 <filteritem type="fillname" name="ChangeLog.*" desc="This is chenglog file, no need license"/>
                 <filteritem type="filepath" name="src/base/md5.h" desc="This file is free software"/>
                 <filteritem type="filepath" name="src/pcf/pcfutil.c" desc="This file is free software"/>
