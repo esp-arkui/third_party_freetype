@@ -78,6 +78,18 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="src/pcf/pcfutil.c" desc="This file is free software"/>
                 <filteritem type="filepath" name="builds/unix/pkg.m4" desc="pkg-config file"/>
             </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <filteritem type="filepath" name="docs/reference/site/assets/fonts/specimen/.*.ttf|.*.woff|.*.woff2" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="builds/amiga/README" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="builds/amiga/README" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="docs/reference/site/images/favico.ico" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="builds/amiga/makefile.os4" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="builds/amiga/smakefile" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="builds/vms/vmslib.dat" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="src/autofit/afblue.dat" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="docs/reference/site/sitemap.xml.gz" desc="freetype file, not to check"/>
+                <filteritem type="filepath" name="docs/reference/site/assets/images/favicon.png" desc="freetype file, not to check"/>
+            </filefilter>
         </filefilterlist>
         <licensematcherlist>
             <licensematcher name="zlib/libpng License" desc="zlib/png license">
