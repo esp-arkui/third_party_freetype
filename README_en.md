@@ -1,5 +1,4 @@
-  FreeType 2.10.4
-  ===============
+  # FreeType 2.10.4
 
   Homepage: https://www.freetype.org
 
@@ -36,8 +35,8 @@
     https://www.freetype.org/freetype2/docs/
 
 
-  Mailing Lists
-  =============
+  # Mailing Lists
+
 
   The preferred way  of communication with the FreeType  team is using
   e-mail lists.
@@ -54,8 +53,8 @@
   how to subscribe.
 
 
-  Bugs
-  ====
+  # Bugs
+
 
   Please submit bug reports at
 
@@ -67,8 +66,8 @@
   a terse message that only says `it doesn't work'.
 
 
-  Patches
-  =======
+  # Patches
+
 
   Please  submit patches  to  the `freetype-devel@nongnu.org'  mailing
   list  --  and thank  you  in  advance  for  your work  on  improving
@@ -94,6 +93,3 @@ modified,  and distributed  under the  terms of  the  FreeType project
 license,  LICENSE.TXT.  By  continuing to  use, modify,  or distribute
 this file you  indicate that you have read  the license and understand
 and accept it fully.
-
-
---- end of README ---
