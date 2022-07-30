@@ -32,6 +32,7 @@ freetype_sources = [
   "src\base\ftglyph.c",
   "src\base\ftgxval.c",
   "src\base\ftinit.c",
+  "src\base\ftobjs.c",
   "src\base\ftmm.c",
   "src\base\ftotval.c",
   "src\base\ftpatent.c",
