@@ -45,7 +45,6 @@ freetype_sources = [
   "src\cache\ftcache.c",
   "src\cff\cff.c",
   "src\cid\type1cid.c",
-  "src\gzip\ftgzip.c",
   "src\lzw\ftlzw.c",
   "src\pcf\pcf.c",
   "src\pfr\pfr.c",
@@ -53,8 +52,13 @@ freetype_sources = [
   "src\pshinter\pshinter.c",
   "src\psnames\psmodule.c",
   "src\raster\raster.c",
+  "src\sdf\ftbsdf.c",
+  "src\sdf\ftsdf.c",
+  "src\sdf\ftsdfcommon.c",
+  "src\sdf\ftsdfrend.c",
   "src\sfnt\sfnt.c",
   "src\smooth\smooth.c",
+  "src\svg\ftsvg.c",
   "src\truetype\truetype.c",
   "src\type1\type1.c",
   "src\type42\type42.c",
@@ -70,10 +74,17 @@ if (defined(ohos_lite)) {
     }
     deps = [ "//third_party/libpng:libpng" ]
     sources = freetype_sources
+
+    if (!defined(SYSTEM_ZLIB) && !defined(FT_CONFIG_OPTION_SYSTEM_ZLIB)) {
+      sources += [ "src/gzip/ftgzip.c" ]
+    } 
     include_dirs = [
-      "src\base",
+      "src/base",
       "//third_party/libpng",
     ]
+
+    public_configs = [ ":freetype_config" ]
+    defines = [ "FT_CONFIG_OPTION_USE_PNG" ]
 
     if (defined(board_toolchain_type) && board_toolchain_type == "iccarm") {
       cflags = [
@@ -82,9 +93,6 @@ if (defined(ohos_lite)) {
       ]
       cflags_cc = cflags
     }
-
-    public_configs = [ ":freetype_config" ]
-    defines = [ "FT_CONFIG_OPTION_USE_PNG" ]
   }
 
   lite_component("freetype_shared") {
