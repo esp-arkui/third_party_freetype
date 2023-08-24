@@ -78,7 +78,7 @@ if (defined(ohos_lite)) {
     sources = freetype_sources
     include_dirs = [
       "src/base",
-      "//third_party/libpng",
+      "//third_party/libpng/libpng-1.6.37",
     ]
 
     public_configs = [ ":freetype_config" ]
